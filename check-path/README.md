@@ -9,7 +9,7 @@ pip install icmplib
 
 ## Command Format ##
 ```
-usage: check-path.py [-h] [-r RTTOK] [-R RTTMAX] [-t TTYPE] [-m MAXHOPS] host
+usage: check-path.py [-h] [-r RTTOK] [-R RTTMAX] [-m MAXHOPS] host
 
 positional arguments:
   host                  The host address that will be tested
@@ -20,9 +20,6 @@ optional arguments:
                         Upper rtt limit considered ok
   -R RTTMAX, --rttmax RTTMAX
                         Max rtt limit before host considered critical
-  -t TTYPE, --ttype TTYPE
-                        Test type 1: Simple status and RTT 2: Status with
-                        worst hop 3: Status with all hops
   -m MAXHOPS, --maxhops MAXHOPS
                         The maximum numbr of hops to trace
 
