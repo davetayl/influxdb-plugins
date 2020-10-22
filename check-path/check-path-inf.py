@@ -34,7 +34,7 @@ def trace(host):
         for hop in traceroute(host,fast_mode=True):
                 if last_distance + 1 != hop.distance:
                         print('*')
-                print(f'path,hop={hop.distance},addr={hop.address},rtt={hop.avg_rtt}ms {timestamp}')
+                print(f'path,hop={hop.distance},addr={hop.address} rtt={hop.avg_rtt}ms {timestamp}')
                 last_distance = hop.distance
         return
 
