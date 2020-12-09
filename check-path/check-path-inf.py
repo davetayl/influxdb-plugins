@@ -31,7 +31,7 @@ check = ping(host)
 
 def trace(host):
         last_distance = 0
-        for hop in traceroute(host,fast_mode=True):
+        for hop in traceroute(host,fast=True):
                 if last_distance + 1 != hop.distance:
                         print('*')
                 print(f'path,hop={hop.distance},addr={hop.address} rtt={hop.avg_rtt} {timestamp}')
